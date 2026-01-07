@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Album Histography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Histography Flow Inspired</p>
+      <h1>나의 앨범 히스토그래피</h1>
+      <p class="subtitle">
+        별점으로 앨범을 기록하면 아티스트/작곡/레이블 정보를 한눈에 확인하고,
+        취향을 기반으로 추천과 공유까지 이어지는 음악 지도.
+      </p>
+    </div>
+    <div class="hero-card">
+      <h2>빠른 시작</h2>
+      <ol>
+        <li>앨범을 선택하고 별점을 남기세요.</li>
+        <li>정보 패널에서 디스코그래피·역사지형도를 확인하세요.</li>
+        <li>추천 &amp; 취향 프로필을 공유하세요.</li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="timeline">
+      <h2>앨범 타임라인</h2>
+      <p class="section-lead">히스토그래피처럼 흐름을 따라가며 앨범을 평가하세요.</p>
+      <div id="album-list" class="album-list"></div>
+    </section>
+
+    <aside class="panel">
+      <section class="info-panel">
+        <h2>앨범 정보</h2>
+        <div id="album-info" class="info-empty">앨범을 선택하면 자세한 정보가 표시됩니다.</div>
+      </section>
+
+      <section class="recommendations">
+        <h2>추천 앨범</h2>
+        <ul id="recommend-list" class="recommend-list"></ul>
+      </section>
+
+      <section class="profile">
+        <h2>취향 프로필</h2>
+        <div id="profile-summary" class="profile-summary"></div>
+        <button id="copy-profile" class="copy-button" type="button">프로필 공유 텍스트 복사</button>
+        <textarea id="profile-text" class="profile-text" readonly></textarea>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>데이터는 데모용 샘플이며 실제 서비스에서는 API/DB로 확장합니다.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
